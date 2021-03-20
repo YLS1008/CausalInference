@@ -1,10 +1,9 @@
-AFFECTIVE_DIST = 8 # in feet
-
-
 import data_formatting as dtf
 import graphs_and_plots as gnp
 import causal_algorithms as alg
 from utils import propensity_balance
+
+AFFECTIVE_DIST = 8 # in feet
 
 
 def main():
