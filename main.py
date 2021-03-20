@@ -10,8 +10,8 @@ from utils import propensity_balance
 def main():
     gnp.offensive_stats_plots()
     raw_df = dtf.basic_data_formatting()
-    # gnp.distance_histogram(raw_df, 'CLOSE_DEF_DIST')
-    # gnp.distance_histogram(raw_df, 'SHOT_DIST')
+    gnp.distance_histogram(raw_df, 'CLOSE_DEF_DIST')
+    gnp.distance_histogram(raw_df, 'SHOT_DIST')
     filtered_df = dtf.data_filtering(raw_df, AFFECTIVE_DIST)
 
     close_df, mid_df, long_df = dtf.categorical_formatting(filtered_df)
