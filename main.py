@@ -19,7 +19,7 @@ def main():
 
     for curr in groups_list:
         (df, group) = curr
-        # gnp.common_support(df, group)
+        gnp.common_support(df, group)
         propensity_balance(df, group)
         alg.t_learner(df, group)
         alg.IPW(df, group)
